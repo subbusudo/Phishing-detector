@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "PhishSentry - Gmail Phishing Detector",
+  "description": "Detect phishing emails using OpenPhish & heuristics (auto Gmail integration).",
+  "version": "1.1",
+  "permissions": [],
+  "host_permissions": ["https://mail.google.com/"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "assets/logo.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "assets/logo.png"
+  }
+}
