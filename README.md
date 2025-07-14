@@ -36,6 +36,22 @@ PhishSentry will show:
 - OpenPhish (offline data)
 - Gmail DOM integration
 
+# How to 🧪 Test Instructions:
+Unzip the file.
+
+Go to chrome://extensions/
+
+Enable Developer Mode
+
+Click Load unpacked and select the unzipped folder.
+
+Open Gmail and click on any email.
+
+Look for the “🔍 Scan with PhishSentry” button above the message.
+
+Click it — you'll get phishing detection results instantly.
+
+
 ---
 
 > ⚠️ For educational/testing use only. Do not use for malicious purposes.
